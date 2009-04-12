@@ -13,6 +13,9 @@
   settings.yml configures our blueprint and is compiled
   with blueprint-css/lib/compress.rb
 
+  More info on compress.rb:
+  http://www.jdclayton.com/blueprints_compress_a_walkthrough.html
+
 * Configuring Blueprint
 
   1. Update the submodule
