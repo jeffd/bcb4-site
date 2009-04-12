@@ -1,0 +1,25 @@
+* Barcamp Boston 4 Website README
+
+  This is the site that is used on barcampboston.org.
+
+* Blueprint CSS
+
+  We are using the blueprint-css framework for layout.
+  It is imported as a submodule called 'blueprint-css'.
+
+  For more information on blueprint see:
+  http://github.com/joshuaclayton/blueprint-css/
+
+  settings.yml configures our blueprint and is compiled
+  with blueprint-css/lib/compress.rb
+
+* Configuring Blueprint
+
+  1. Update the submodule
+  2. Copy 'settings.yml' to 'blueprint-css/lib/'
+  3. cd blueprint-css/lib/
+  4. chmod a+x compress.rb
+  5. ./compress.rb -p barcamp
+
+  This will compile the CSS to the blueprint folder
+  at the top level of the project.
