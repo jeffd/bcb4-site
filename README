@@ -19,7 +19,8 @@
   2. Copy 'settings.yml' to 'blueprint-css/lib/'
   3. cd blueprint-css/lib/
   4. chmod a+x compress.rb
-  5. ./compress.rb -p barcamp
+  5. mkdir ../../blueprint/
+  6. ./compress.rb -p barcamp
 
   This will compile the CSS to the blueprint folder
   at the top level of the project.
