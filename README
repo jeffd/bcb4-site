@@ -19,6 +19,8 @@
 * Configuring Blueprint
 
   1. Update the submodule
+     1.1 git-submodule init
+     1.2 git-submodule update
   2. Copy 'settings.yml' to 'blueprint-css/lib/'
   3. cd blueprint-css/lib/
   4. chmod a+x compress.rb
