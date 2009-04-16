@@ -2,9 +2,9 @@
 barcamp:
   path: ../../blueprint/
   custom_layout:
-    column_count: 12
+    column_count: 10
     column_width: 60
-    gutter_width: 10
+    gutter_width: 20
   plugins:
     - fancy-type
     - buttons
