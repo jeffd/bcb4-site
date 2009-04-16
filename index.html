@@ -10,28 +10,101 @@
     <link rel="stylesheet" href="blueprint/screen.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="blueprint/print.css" type="text/css" media="print" />
     <!--[if IE]><link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-
     <!-- Import fancy-type plugin. -->
     <link rel="stylesheet" href="blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection" />
-
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="js/jquery.jcarousel.css" />
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.pack.js"></script>
+
+    <script type="text/javascript">
+      function mycarousel_initCallback(carousel)
+      {
+      // Disable autoscrolling if the user clicks the prev or next button.
+      carousel.buttonNext.bind('click', function() {
+      carousel.startAuto(0);
+      });
+
+      carousel.buttonPrev.bind('click', function() {
+      carousel.startAuto(0);
+      });
+
+      // Pause autoscrolling if the user moves with the cursor over the clip.
+      carousel.clip.hover(function() {
+      carousel.stopAuto();
+      }, function() {
+      carousel.startAuto();
+      });
+      };
+
+      jQuery(document).ready(function() {
+      jQuery('#sponsor-carousel').jcarousel({
+      auto: 2,
+      wrap: 'last',
+      vertical: true,
+      initCallback: mycarousel_initCallback
+      });
+      });
+    </script>
   </head>
 
-
   <body>
-
     <div class="container">
 
-      <div id="header" class="span-12">
+      <div id="header" class="span-10 last">
         <h1 id="bcb4"><img src="images/bcamp-logo.png" alt="Barcamp logo image" id="logo-image" /></h1>
       </div>
 
-      <div id="main-graphic" class="span-10">
-        <img src="images/gradient-round-rect.png" alt="Large silver round rec" id="silver-rec-image" />
-      </div>
+      <div id="main-graphic" class="span-10 last">
+        <div id="general-info" class="span-4">
+          <h1 class="loud">April 25&ndash;26</h1>
+          <p>BarCamp is an unConference, organized on the fly by attendees, for attendees.</p>
+          <p>There is no registration fee, but you don't just attend a BarCamp -- you can participate in discussions, demo your projects, or join into another cooperative event.</p>
+          <p>Topics may include, but are not limited to: open source software, startups, UI design, entrepreneurship, AJAX, hardware hacking, robotics, mobile computing, bioinformatics, RSS, Social Software, programming languages, and the future of technology.</p>
+        </div>
 
+        <div id="sponsors" class="span-4 last">
+          <h3 class="loud"></h3>
+          <ul id="sponsor-carousel" class="jcarousel-skin-sponsors">
+            <li><img src="images/sponsors/sponsor_01.png" alt="" /></li>
+            <li><img src="images/sponsors/sponsor_02.png" alt="" /></li>
+            <li><img src="images/sponsors/sponsor_03.png" alt="" /></li>
+            <li><img src="images/sponsors/sponsor_04.png" alt="" /></li>
+            <li><img src="images/sponsors/sponsor_05.png" alt="" /></li>
+            <li><img src="images/sponsors/sponsor_06.png" alt="" /></li>
+            <li><img src="images/sponsors/sponsor_07.png" alt="" /></li>
+            <li><img src="images/sponsors/sponsor_08.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <div id="bottom">
+      <div class="container">
+        <div class="span-4 prepend-1">
+          <h2>Recent Tweets</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla laborum.</p>
+        </div>
+
+
+        <div class="span-4 last">
+          <h2>Write a Review</h2>
+          <p>
+            Nam vitae tortor id ante sodales facilisis. Mauris ipsum.
+          </p>
+        </div>
+
+        <div class="span-2">
+          <h2>Where</h2>
+          <p>MIT, Stata Center</p>
+          <p>32 Vassar Street</p>
+          <p>Cambridge, MA 02139</p>
+	  <p><a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=32+Vassar+Street,+Cambridge,+MA+02139&sll=42.38256,-71.099012&sspn=0.014059,0.016909&g=28+Summer+St,+Somerville,+MA+02143&ie=UTF8&z=17&iwloc=addr">see a map</a></p>
+        </div>
+
+      </div>
+    </div>
 
   </body>
 </html>
