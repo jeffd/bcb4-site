@@ -6,5 +6,5 @@ barcamp:
     column_width: 60
     gutter_width: 20
   plugins:
-    - fancy-type
-    - buttons
+    - typography
+
