@@ -109,11 +109,18 @@
 
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript">google.load("jquery", "1.3.2");</script>
-    <script type="text/javascript" src="js/jtwitter/jquery.jtwitter.js"></script>
+    <script type="text/javascript" src="js/jquery.jtwitter.js"></script>
     <script type="text/javascript" src="js/jquery.flickr-1.0.js"></script>
 
     <script type="text/javascript">
-      $('#twitter').jTwitter({'username':'BarCampBoston','term':'#bcb4','limit':3,'showAvatars':true,'showSource': false,'showDate':false});
+      $.fn.jTwitter.defaults.username = 'BarCampBoston';
+      $.fn.jTwitter.defaults.term = '#bcb4';
+      $.fn.jTwitter.defaults.showDate = false;
+      $.fn.jTwitter.defaults.limit = 3;
+      $.fn.jTwitter.defaults.showSource = false;
+      $.fn.jTwitter.defaults.showOriginal = false;
+      $('#twitter').jTwitter({limit:1});
+      $('#twitter').jTwitterSearch();
     </script>
 
     <script type="text/javascript">
