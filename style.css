@@ -96,7 +96,7 @@ body {
   text-align: center;
 }
 
-#info-dates h1.loud a, a:link, a:visited, a:hover {
+#info-dates h1.loud a#mit, a#mit:link, a#mit:visited, a#mit:hover {
   color: #000;
   text-shadow: 0px 1px 1px #fff;
   font-weight: normal;
