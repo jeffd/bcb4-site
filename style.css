@@ -103,6 +103,10 @@ body {
   font-style: normal;
 }
 
+#colophon p {
+  margin: 0;
+}
+
 #info-blurb p {
   margin-bottom: 5px;
 }
