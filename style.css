@@ -96,6 +96,13 @@ body {
   text-align: center;
 }
 
+#info-dates h1.loud a, a:link, a:visited, a:hover {
+  color: #000;
+  text-shadow: 0px 1px 1px #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+
 #info-blurb p {
   margin-bottom: 5px;
 }
