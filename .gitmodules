@@ -1,6 +1,4 @@
 [submodule "blueprint-css"]
 	path = blueprint-css
 	url = git://github.com/joshuaclayton/blueprint-css.git
-[submodule "js/jtwitter"]
-	path = js/jtwitter
-	url = git://github.com/dryan/jtwitter.git
+
