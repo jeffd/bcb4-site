@@ -1,15 +1,14 @@
 body {
   background-color: #141414;
+  z-index: -2;
 }
 
 #main-graphic {
   width: 780px;
   height: 342px;
   background: url(images/gradient-round-rect.png) no-repeat;
-}
-
-#top {
-  z-index: 2;
+  z-index: 10;
+  position: relative;
 }
 
 #bottom {
@@ -22,7 +21,7 @@ body {
   top: -75px;
   color: #E4E4E4;
   display: block;
-  z-index: -1;
+  z-index: 1;
 }
 
 #bottom h2 {

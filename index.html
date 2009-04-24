@@ -119,13 +119,14 @@
       $.fn.jTwitter.defaults.showDate = false;
       $.fn.jTwitter.defaults.limit = 3;
       $.fn.jTwitter.defaults.showSource = false;
-      $.fn.jTwitter.defaults.showOriginal = false;
+      $.fn.jTwitter.defaults.showOriginal = true;
+      $.fn.jTwitter.defaults.useFullName = true;
       $('#twitter').jTwitter({limit:1});
       $('#twitter').jTwitterSearch();
     </script>
 
     <script type="text/javascript">
-      jQuery("#flickr").flickr({api_key: "3a6f21df07d81a385aec6863ddc4a1b4", per_page: 9, type: "search", text: "barcampboston"});
+      jQuery("#flickr").flickr({api_key: "3a6f21df07d81a385aec6863ddc4a1b4", per_page: 9, type: "search", text: "barcampboston", sort: "date-taken-desc"});
     </script>
   </body>
 </html>
